@@ -15,6 +15,7 @@ function App() {
       <p className="read-the-docs">
        I'm using CI/CD pipeline and it deployed on versel
       </p>
+      <p>this is learn with Next.js </p>
     </>
   )
 }
