@@ -1,33 +1,27 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+import Header from "./components/Header.jsx";
+import Card from "./components/Card.jsx";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
+      <Header />
       <div>
         <h1>This is nikhil first react app </h1>
       </div>
-      
+
       <p className="read-the-docs">
-       I'm using CI/CD pipeline and it deployed on versel
+        I'm using CI/CD pipeline and it deployed on versel
       </p>
       <p>this is learn with Next.js </p>
 
-      <div className='max-w-sm bg-white border border-gray-200 rounded-xl mt-8 shadow overflow-hidden'>
-        <img src="https://images.unsplash.com/photo-1587080413959-06b859fb107d?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNvZmZlZSUyMGN1cHxlbnwwfHwwfHx8MA%3D%3D" alt="Sample Image" />
-        <div>
-          <h2>Card Title</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae sit quos tempore debitis non aliquam deleniti, distinctio ab ducimus unde nam dolorem eveniet facere corrupti earum maxime ipsam quia voluptate!
-          Incidunt voluptate obcaecati atque itaque delectus eum laudantium autem optio ipsam asperiores tempora non, perferendis voluptates assumenda dolorum. Libero exercitationem saepe explicabo possimus, ex officiis voluptatum voluptatem iste quisquam magni.</p>
-          <button>Buy Now</button>
-        </div>
+      <div className="flex gap-4">
+        <Card title="Black Tea" imageUrl="https://www.alveus.eu/wp-content/smush-webp/020-a.jpg.webp" buttonText="Order Now" />
+        <Card title="Green Tea" imageUrl="https://www.vahdam.com/cdn/shop/articles/Green_Tea_Header_copy.jpg?v=1714738610&width=2048" buttonText="Buy Now"/>
+        <Card title="Escpresso Coffee" imageUrl="https://www.holidayscalendar.com/wp-content/uploads/2020/08/National-Espresso-Day.jpg" buttonText="Join Us"/>
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
