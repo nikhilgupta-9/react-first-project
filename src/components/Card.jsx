@@ -1,4 +1,5 @@
 import React from 'react'
+import { Button } from "@/components/ui/button"
 
 const Card = ({title = "Default", imageUrl, buttonText}) => {
   return (
@@ -15,9 +16,12 @@ const Card = ({title = "Default", imageUrl, buttonText}) => {
               distinctio ab ducimus unde nam dolorem eveniet facere corrupti
              
             </p>
-            <button className="mt-4 text-white bg-blue-600 hover:bg-blue-700 rounded-full text-sm px-4 py-2.5 focus:outline-none">
+            {/* <button className="mt-4 text-white bg-blue-600 hover:bg-blue-700 rounded-full text-sm px-4 py-2.5 focus:outline-none">
               {buttonText}
-            </button>
+            </button> */}
+            <Button>
+                {buttonText}
+            </Button>
           </div>
         </div>
   )
